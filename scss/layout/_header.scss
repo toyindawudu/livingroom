@@ -1,0 +1,21 @@
+header{
+  width: 80%;
+  background-color: black;
+  margin: auto;
+  nav{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__toggle {
+      
+      span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+  }
+}
