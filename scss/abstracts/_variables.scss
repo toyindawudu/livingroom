@@ -1,10 +1,19 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 // Colours
 
-$primary-colour: #3ed810;
-$secondary-colour: #272727;
-$tiertiary-colour: #272727;
-$accent-colour: #272727;
-$complimentary-colour: #5BAF65;
+$primary-color: #3ed810;
+$secondary-color: #272727;
+$tiertiary-color: #272727;
+$accent-color: #272727;
+$complimentary-color: #5BAF65;
+$title-color: #393939;
+$text-color: #707070;
+$text-color-light: #A6A6A6;
+$body-color:#FBFEFD;
+$container-color:#FFFFFF;
+
 
 $light-grey: #828182;
 $white: #fff;
@@ -12,13 +21,41 @@ $black: #000;
 
 
 // Font and typography
+$body-font:'Poppins', sans-serif;
+$biggest-font-size: 2.25rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 813rem;
+$smaller-font-size: .75rem;
 
+
+$font-medium:400;
+$font-large:700;
 
 // Margins 
-
 $mb-1: .5rem;
 $mb-2: 1rem;
 $mb-3: 1.5rem;
 $mb-4: 2rem;
 $mb-5: 2.5rem;
 $mb-6: 3rem;
+
+// Z INDEX
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// header
+
+$header-height: 3rem;
+
+@media screen and (min-width: 768px) {
+  $biggest-font-size: 4rem;
+  $h1-font-size: 2.25rem;
+  $h2-font-size: 1.5rem;
+  $h3-font-size: 1.25rem;
+  $normal-font-size: 1rem;
+  $small-font-size: 875rem;
+  $smaller-font-size: .813rem;
+}
