@@ -1,4 +1,6 @@
-/*== SHOW THE MOBILE MENU */
+/*=======================
+    SHOW THE MOBILE MENU 
+======================== */
 const showMenu = (toggleId, navId) =>{
   // Initiate the variables
   const toggle = document.getElementById(toggleId),
@@ -14,13 +16,21 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*== REMOVE THE MOBILE */
+/*=========================
+    REMOVE THE MOBILE MENU
+========================== */
 // Initiate the variable
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
   const navMenu = document.getElementById('nav-menu')
-  // When we click on the nav__link, we want to remove the show-menu class
+  // When we click on the nav__link, we want to remove the show-menu class from navMenu
   navMenu.classList.remove('show-menu')
 }
-navLink.forEach(item => item.addEventListener('click', linkAction));
+
+navLink.forEach(item => item.addEventListener('click', linkAction));  
+
+
+/*=========================
+    SHOW SCROLL TO THE TOP
+========================== */
