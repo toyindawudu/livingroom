@@ -42,3 +42,8 @@ img {
   margin-left: $mb-2;
   margin-right: $mb-2;
 }
+
+.body-grid {
+  display: grid;
+  gap: 1.5rem;
+}
