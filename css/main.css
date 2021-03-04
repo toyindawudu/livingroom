@@ -40,6 +40,29 @@ img {
   height: auto;
 }
 
+/*=========================
+    DEFAULT DOCUMENT CSS
+========================== */
+.section {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #393939;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  display: block;
+  color: #3ed810;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/*=========================
+    LAYOUT
+========================== */
 .body-container {
   max-width: 960px;
   width: calc(100%-2rem);
@@ -55,7 +78,6 @@ img {
 
 .main-header {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -125,23 +147,46 @@ img {
   top: 3rem;
 }
 
-.container {
+.scroll-header {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: inherit;
+  z-index: 10;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: hidden;
 }
 
-.col-left {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+.scrolltop:hover {
+  background-color: #5BAF65;
 }
 
-.col-center,
-.col-right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: grey;
+.scrolltop__icon {
+  font-size: 1.9rem;
+  color: #FBFEFD;
+}
+
+.scroll-top {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+.home__container {
+  height: calc(100vh - $header-height);
 }
 /*# sourceMappingURL=main.css.map */

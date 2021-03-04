@@ -1,11 +1,10 @@
 .main-header {
   width: 100%;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   z-index: $z-fixed;
   background-color: $body-color;
-  // border: 2px red solid;
 }
 
 .nav{
@@ -14,11 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // &__menu {
-  //   border: 2px solid red;
-  // }
-
 
   &__item{
     margin-bottom: $mb-2;
@@ -71,3 +65,36 @@
   top: $header-height;
 }
 
+// Activate scroll-header
+.scroll-header {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+// Scroll top which shows at the bottom left-handside of the mobile page
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: rgba(52, 134, 70, 0.2);
+  background: inherit;
+  z-index: $z-tooltip;
+  transition: .5s;
+  visibility: hidden;
+
+  &:hover {
+    background-color: $complimentary-color;
+  }
+
+  &__icon {
+    font-size: 1.9rem;
+    color: $body-color;
+  }
+}
+.scroll-top { // This scroll pertains to 
+  visibility: visible;
+  bottom: 1.5rem;
+  // background: red;
+}
