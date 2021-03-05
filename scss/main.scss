@@ -14,10 +14,13 @@
 // 4. Layout-related sections
 @import
 'layout/header',
-'layout/home';
+'layout/home.scss';
 
 // 5. Components
+@import
+'components/buttons'
 // 6. Page-specific styles
-// @import 'layout/mediaqueries';
+// @import 
+// 'layout/mediaqueries';
 // 7. Themes
 // 8. Main SASS input file

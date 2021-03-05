@@ -1,0 +1,27 @@
+.home {
+  &__container {
+    height: calc(100vh-($header-height));
+    align-content: center;
+  }
+
+  &__title {
+    font-size: $biggest-font-size;
+    line-height: 1.175;
+    color: $title-color;
+    margin-bottom: $mb-1;
+    // padding-top: 1.5rem;
+  }
+
+  &__sub-title {
+    font-size: $h2-font-size;
+    color: $title-color;
+    margin-bottom: $mb-2;
+  }
+
+  &__image {
+    width: 300px;
+    align-self: center;
+    margin: auto;
+  }
+        
+}
