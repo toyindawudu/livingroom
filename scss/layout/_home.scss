@@ -23,3 +23,16 @@
     margin: auto;
   }  
 }
+
+.about {
+
+  &__data {
+    text-align: center;
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: $mb-3;
+  }
+  
+}

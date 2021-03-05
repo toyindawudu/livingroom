@@ -185,6 +185,7 @@ img {
   z-index: 10;
   -webkit-transition: .5s;
   transition: .5s;
+  visibility: hidden;
 }
 
 .scrolltop:hover {
@@ -225,6 +226,15 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 .button {

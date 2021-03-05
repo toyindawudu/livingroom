@@ -92,7 +92,7 @@
   background: inherit;
   z-index: $z-tooltip;
   transition: .5s;
-  // visibility: hidden;
+  visibility: hidden;
 
   &:hover {
     background-color: $complimentary-color;

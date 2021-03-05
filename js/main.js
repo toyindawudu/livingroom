@@ -51,7 +51,6 @@ navLink.forEach(item => item.addEventListener('click', linkAction));
       document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
      }
    })
-
  }
 
 /*=========================
