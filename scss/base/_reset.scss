@@ -21,6 +21,9 @@ body{
 h1,h2,h3,h4,h5,h6,p,ul {
   margin: 0;
 }
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: $mb-2;
+}
 
 a {
   text-decoration: none;
