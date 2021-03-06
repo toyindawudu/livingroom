@@ -194,7 +194,9 @@ img {
 
 .scrolltop__icon {
   font-size: 2.5rem;
-  color: #3ed810;
+  color: #fff;
+  background-color: #3ed810;
+  border-radius: 5px;
 }
 
 .scroll-top {

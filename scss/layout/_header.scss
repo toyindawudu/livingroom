@@ -100,8 +100,9 @@
 
   &__icon {
     font-size: 2.5rem;
-    color: $primary-color;
-    // color: red;
+    color: $white;
+    background-color: $primary-color;
+    border-radius: 5px;
   }
 }
 .scroll-top { // This scroll pertains to 

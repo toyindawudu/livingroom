@@ -74,8 +74,8 @@ window.addEventListener('scroll', scrollHeader);
 
 function scrollTop(){
   const scrollTop = document.getElementById('scroll-top');
-  // When the scroll is greater than 560 viewport height, add the scroll header class to the element
-  if(this.scrollY >= 560) {
+  // When the scroll is greater than 250 viewport height, add the scroll header class to the element
+  if(this.scrollY >= 250) {
     scrollTop.classList.add('scroll-top');
   } else {
     scrollTop.classList.remove('scroll-top');
