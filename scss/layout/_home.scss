@@ -34,5 +34,74 @@
     text-align: left;
     margin-bottom: $mb-3;
   }
-  
+}
+
+.services {
+
+  &__content {
+    text-align: center;
+  }
+
+  &__image {
+    width: 300px;
+  }
+
+  &__name {
+    margin-bottom: 0;
+  }
+
+  &__description {
+    text-align: left;
+  }
+}
+
+.menu {
+
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $container-color;
+    padding: .75rem;
+    box-shadow: 0 2px 4px rgba(3,74,40,.15);
+  }
+
+  &__image {
+    width: 200px;
+    align-self: center;
+    margin-bottom: $mb-2;
+  }
+
+  &__name, &__price {
+    font-weight: 700;
+    color: $title-color;
+  }
+
+  &__name {
+    font-size: $normal-font-size;
+  }
+
+  &__detail, &__price {
+    font-size: $small-font-size;
+  }
+
+  &__detail {
+    margin-bottom: $mb-1;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+  }
+
+ 
 }

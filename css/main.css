@@ -59,7 +59,7 @@ img {
 
 .section-subtitle {
   display: block;
-  color: #3ed810;
+  color: #00b309;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -160,7 +160,7 @@ img {
 }
 
 .active-link {
-  color: #3ed810;
+  color: #00b309;
 }
 
 .scroll-header {
@@ -195,7 +195,7 @@ img {
 .scrolltop__icon {
   font-size: 2.5rem;
   color: #fff;
-  background-color: #3ed810;
+  background-color: #00b309;
   border-radius: 5px;
 }
 
@@ -239,12 +239,86 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.services__content {
+  text-align: center;
+}
+
+.services__image {
+  width: 300px;
+}
+
+.services__name {
+  margin-bottom: 0;
+}
+
+.services__description {
+  text-align: left;
+}
+
+.menu__container {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  padding: .75rem;
+  -webkit-box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+          box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+}
+
+.menu__image {
+  width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1rem;
+}
+
+.menu__name, .menu__price {
+  font-weight: 700;
+  color: #393939;
+}
+
+.menu__name {
+  font-size: 0.938rem;
+}
+
+.menu__detail, .menu__price {
+  font-size: 0.813rem;
+}
+
+.menu__detail {
+  margin-bottom: 0.5rem;
+}
+
+.menu__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .625rem .813rem;
+  border-radius: .5rem 0 .5rem 0;
+}
+
 .button {
   display: inline-block;
-  background-color: #3ed810;
+  background-color: #00b309;
   color: #fff;
   padding: .75rem 1rem;
-  border-radius: 10px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
