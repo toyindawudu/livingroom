@@ -314,6 +314,27 @@ img {
   border-radius: .5rem 0 .5rem 0;
 }
 
+.app__data {
+  text-align: center;
+}
+
+.app__description {
+  margin-bottom: 1rem;
+}
+
+.app__stores {
+  margin-bottom: 2.5rem;
+}
+
+.app__store {
+  width: 120px;
+  margin: 0 0.5rem;
+}
+
+.contact__container {
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   background-color: #00b309;
