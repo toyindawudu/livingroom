@@ -130,3 +130,52 @@
     text-align: center;
   }
 }
+
+.footer {
+
+  &__container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+  }
+
+  &__logo {
+    font-size: $h3-font-size;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  &__description {
+    display: block;
+    font-size: $small-font-size;
+    margin: .25rem 0 $mb-3; 
+  }
+
+  &__social {
+    font-size: $h2-font-size;
+    color: $text-color;
+    margin-bottom: $mb-2;
+  }
+
+  &__title {
+    font-size: $h2-font-size;
+    color: $title-color;
+    margin-bottom: $mb-2;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $text-color;
+    margin-bottom: $mb-2;
+
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: $small-font-size;
+    color: $text-color-light;
+    margin: 3.5rem;
+  }
+}

@@ -335,6 +335,53 @@ img {
   text-align: center;
 }
 
+.footer__container {
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 2rem;
+}
+
+.footer__logo {
+  font-size: 1rem;
+  color: #00b309;
+  font-weight: 700;
+}
+
+.footer__description {
+  display: block;
+  font-size: 0.813rem;
+  margin: 0.25rem 0 1.5rem;
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  color: #707070;
+  margin-bottom: 1rem;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  color: #393939;
+  margin-bottom: 1rem;
+}
+
+.footer__link {
+  display: inline-block;
+  color: #707070;
+  margin-bottom: 1rem;
+}
+
+.footer__link:hover {
+  color: #00b309;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 0.813rem;
+  color: #A6A6A6;
+  margin: 3.5rem;
+}
+
 .button {
   display: inline-block;
   background-color: #00b309;
