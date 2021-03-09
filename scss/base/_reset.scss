@@ -39,6 +39,7 @@ img {
   height: auto;
 }
 
+
 /*=========================
     DEFAULT DOCUMENT CSS
 ========================== */
@@ -55,8 +56,22 @@ img {
   &-subtitle {
     display: block;
     color: $primary-color;
-    font-weight: $font-medium;
+    font-weight: $font-medium;  
     margin-bottom: $mb-1;
+  }
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  &__title {
+    font-size: 5.275rem;
+    font-weight: 700;
+    line-height: 1.175;
+    color: #393939;
+    text-align: center;
   }
 }
 

@@ -64,6 +64,18 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.heading__title {
+  font-size: 5.275rem;
+  font-weight: 700;
+  line-height: 1.175;
+  color: #393939;
+  text-align: center;
+}
+
 /*=========================
     LAYOUT
 ========================== */
@@ -217,7 +229,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.home__sub-title {
+.home__subtitle {
   font-size: 1.25rem;
   color: #393939;
 }
@@ -234,9 +246,19 @@ img {
   text-align: center;
 }
 
+.about__subtitle {
+  font-size: 1.5rem;
+  color: #393939;
+  margin-bottom: 1.5rem;
+}
+
 .about__description {
   text-align: left;
   margin-bottom: 1.5rem;
+}
+
+.services {
+  text-align: center;
 }
 
 .services__content {
@@ -336,6 +358,7 @@ img {
 }
 
 .footer__container {
+  text-align: center;
   -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
