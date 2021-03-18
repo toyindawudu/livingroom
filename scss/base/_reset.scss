@@ -17,6 +17,9 @@ body{
   color: $text-color;
   line-height: 1.6;
 }
+section {
+  margin-bottom: 1.5rem;
+}
 
 h1,h2,h3,h4,h5,h6,p,ul {
   margin: 0;
@@ -90,3 +93,13 @@ img {
   display: grid;
   gap: 1.5rem;
 }
+
+@media screen and (min-width: 576px){
+
+.section-title {
+  display: block;
+  text-align: center;
+  }
+}
+
+

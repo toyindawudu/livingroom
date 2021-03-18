@@ -1,7 +1,11 @@
 .home {
   &__container {
     height: calc(100vh-($header-height));
-    align-content: center;
+    align-items: center;
+  }
+
+  &__data {
+    margin: 0 auto;
   }
 
   &__title {
@@ -21,6 +25,7 @@
     width: 300px;
     align-self: center;
     margin: auto;
+    margin-bottom: 3rem;
   }  
 }
 
@@ -38,6 +43,11 @@
   &__description {
     text-align: left;
     margin-bottom: $mb-3;
+  }
+
+  &__image {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 
@@ -75,6 +85,7 @@
     background-color: $container-color;
     padding: .75rem;
     box-shadow: 0 2px 4px rgba(3,74,40,.15);
+    max-width: 190px;
   }
 
   &__image {
@@ -184,5 +195,109 @@
     font-size: $small-font-size;
     color: $text-color-light;
     margin: 3.5rem;
+  }
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 576px){
+
+  .home{
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      align-items: center;
+    }
+
+    &__data{
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 2rem;
+    }
+  }
+
+  .services {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 2rem;
+    }
+  }
+
+  .menu {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .app {
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 768px){
+  body {
+    margin: 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .home{
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      align-items: center;
+    }
+
+    &__data{
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 2rem;
+    }
+  }
+
+  .services {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 2rem;
+    }
+  }
+
+  .menu {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .app {
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
