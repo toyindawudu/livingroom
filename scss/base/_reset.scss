@@ -16,6 +16,7 @@ body{
   background-color: $body-color;
   color: $text-color;
   line-height: 1.6;
+  // border: 2px red solid;
 }
 section {
   margin-bottom: 1.5rem;
@@ -87,6 +88,8 @@ img {
   width: calc(100%-2rem);
   margin-left: $mb-2;
   margin-right: $mb-2;
+  // border: 2px green solid;
+  
 }
 
 .body-grid {
@@ -102,4 +105,9 @@ img {
   }
 }
 
+@media screen and (min-width: 1024px){
+  .body-container{
+    margin: 0 auto;
+  }
+}
 

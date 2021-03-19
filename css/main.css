@@ -103,6 +103,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .body-container {
+    margin: 0 auto;
+  }
+}
+
 .main-header {
   width: 100%;
   position: fixed;
