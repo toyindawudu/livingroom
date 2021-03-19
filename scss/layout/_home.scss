@@ -122,6 +122,7 @@
 }
 
 .app {
+  padding: 1.5rem 1.5rem 0;
 
   &__data {
     text-align: center;
@@ -149,7 +150,7 @@
 }
 
 .footer {
-
+  padding: 1.5rem 1.5rem 0;
   &__container {
     text-align: center;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -239,6 +240,10 @@
     }
   }
 
+  .heading__title {
+    display: block;
+  }
+
   .app {
     &__container {
       grid-template-columns: repeat(1, 1fr);
@@ -248,16 +253,34 @@
 
 }
 
-
-
-@media screen and (min-width: 768px){
+@media screen and(min-width: 768px){
   body {
     margin: 0;
   }
+
+  .nav{
+    height: calc($header-height) + 1.5rem;
+
+    &__list{
+      display: flex;
+    }
+
+    &__item {
+      margin-left: $mb-5;
+      margin-bottom: 0px;
+    }
+
+    &__toggle{
+      display: none;
+    }
+  }
 }
 
-
 @media screen and (min-width: 1024px){
+
+  .body-container{
+    max-width: 1200px;
+  }
 
   .home{
     &__container {
@@ -291,7 +314,8 @@
 
   .menu {
     &__container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 5rem;
     }
   }
 

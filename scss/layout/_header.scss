@@ -110,3 +110,18 @@
   bottom: 1.5rem;
   // background: red;
 }
+
+
+@media screen and (min-width: 768px){
+  body {
+    margin: 0;
+  }
+
+  .section{
+    padding-top: 8rem;
+  }
+
+  .nav {
+    height: calc($header-height) + 1.5rem;
+  }
+}
