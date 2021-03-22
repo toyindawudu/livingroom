@@ -6,6 +6,7 @@
   z-index: $z-fixed;
   background-color: $body-color;
   // border: 2px solid red;
+  padding: 1rem;
 }
 
 .nav{
@@ -26,6 +27,7 @@
 
   &__logo {
     font-size: $font-large;
+
     &:hover {
       color: $accent-color;
     }

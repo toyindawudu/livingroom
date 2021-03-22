@@ -26,8 +26,8 @@ $biggest-font-size: 2.25rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;
-$normal-font-size: 0.938rem;
-$small-font-size: 0.813rem;
+$normal-font-size: 1.35rem;
+$small-font-size: 1rem;
 $smaller-font-size: 0.75rem;
 
 
@@ -47,6 +47,6 @@ $z-tooltip: 10;
 $z-fixed: 100;
 
 // header
-$header-height: 3rem;
+$header-height: 3rem 0 0 0;
 
 // Maybe you should include some styling for screens above 768px

@@ -15,8 +15,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  margin: 3rem, 0, 0, 0;
-  font-size: 0.938rem;
+  margin: 3rem 0 0 0, 0, 0, 0;
+  font-size: 1.35rem;
   background-color: #FBFEFD;
   color: #707070;
   line-height: 1.6;
@@ -80,6 +80,12 @@ img {
   text-align: center;
 }
 
+.btn-holder {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*=========================
     LAYOUT
 ========================== */
@@ -116,11 +122,12 @@ img {
   left: 0;
   z-index: 100;
   background-color: #FBFEFD;
+  padding: 1rem;
 }
 
 .nav {
   max-width: 1024px;
-  height: 3rem;
+  height: 3rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +192,7 @@ img {
 }
 
 .show-menu {
-  top: 3rem;
+  top: 3rem 0 0 0;
 }
 
 .active-link {
@@ -246,7 +253,7 @@ img {
 }
 
 .home__container {
-  height: calc(100vh-($header-height));
+  height: calc(100vh - ( $header-height ));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -277,8 +284,17 @@ img {
   margin-bottom: 3rem;
 }
 
-.newsletter__form {
+.text {
+  text-align: center;
+}
+
+.newsletter__title {
+  text-align: center;
   margin-top: 1rem;
+}
+
+.newsletter__form {
+  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,12 +314,7 @@ img {
 }
 
 .newsletter__btn {
-  background-color: #00b309;
-  color: white;
-  padding: .75rem 1rem;
-  border: none;
-  -webkit-transition: .1s;
-  transition: .1s;
+  font-size: 1.35rem;
 }
 
 .about__data {
@@ -384,11 +395,11 @@ img {
 }
 
 .menu__name {
-  font-size: 0.938rem;
+  font-size: 1.35rem;
 }
 
 .menu__detail, .menu__price {
-  font-size: 0.813rem;
+  font-size: 1rem;
 }
 
 .menu__detail {
@@ -450,7 +461,7 @@ img {
 
 .footer__description {
   display: block;
-  font-size: 0.813rem;
+  font-size: 1rem;
   margin: 0.25rem 0 1.5rem;
 }
 
@@ -478,7 +489,7 @@ img {
 
 .footer__copy {
   text-align: center;
-  font-size: 0.813rem;
+  font-size: 1rem;
   color: #A6A6A6;
   margin: 3.5rem;
 }
@@ -498,11 +509,25 @@ img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    width: 350px;
   }
   .home__image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .newsletter {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter__title {
+    font-size: 2rem;
   }
   .about__container {
     -ms-grid-columns: (1fr)[2];
@@ -517,6 +542,7 @@ img {
   .menu__container {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
   .heading__title {
     display: block;
@@ -546,14 +572,43 @@ img {
   .nav__toggle {
     display: none;
   }
+  .home__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: row;
+  }
+  .home__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .main-header {
+    padding: 1.5rem 5rem;
+  }
+  .main-main {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
   .body-container {
     max-width: 1200px;
   }
   .home {
-    height: 80vh;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .home__container {
     width: 90%;
@@ -572,12 +627,15 @@ img {
             order: 2;
   }
   .home__title {
-    font-size: 6.25rem;
+    font-size: 4.25rem;
   }
   .home__image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .newsletter__title {
+    font-size: 1.5rem;
   }
   .about__container {
     -ms-grid-columns: (1fr)[2];
@@ -600,16 +658,19 @@ img {
   }
 }
 
-.button {
+.button,
+.newsletter__btn {
   display: inline-block;
   background-color: #00b309;
   color: #fff;
   padding: .75rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  border: none;
 }
 
-.button:hover {
+.button:hover,
+.newsletter__btn:hover {
   background-color: #5BAF65;
 }
 /*# sourceMappingURL=main.css.map */
