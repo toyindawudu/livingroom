@@ -29,6 +29,32 @@
   }  
 }
 
+.newsletter {
+
+  &__form{ 
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input{
+    display: block;
+    width: 330px;
+    margin: .875rem;
+    padding: 1.2rem;
+    background-color: rgba(grey, .1);
+    border: none;
+  }
+
+  &__btn {
+    background-color: #00b309;
+    color: white;
+    padding: .75rem 1rem;
+    border: none;
+    transition: .1s;
+  }
+}
+
 .about {
   &__data {
     text-align: center;
@@ -283,7 +309,10 @@
   }
 
   .home{
+    height: 80vh;
+
     &__container {
+      width: 90%;
       grid-template-columns: repeat(2, 1fr);
       display: flex;
       align-items: center;
@@ -291,6 +320,10 @@
 
     &__data{
       order: 2;
+    }
+
+    &__title {
+      font-size: 6.25rem;
     }
 
     &__image {
