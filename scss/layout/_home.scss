@@ -353,7 +353,7 @@
   }
 
   .home{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
 
@@ -374,7 +374,12 @@
 
     &__image {
       order: 1;
+      flex: 1;
     }
+  }
+
+  .text{
+    flex: 1;
   }
 
   .newsletter{
@@ -382,10 +387,18 @@
     &__title{
       font-size: 1.5rem;
     }
+
+    &__btn{
+      margin-top: 2rem;
+    }
     
   }
 
   .about {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
     &__container {
       grid-template-columns: repeat(2, 1fr);
       margin: 0 2rem;

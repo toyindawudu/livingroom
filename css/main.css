@@ -602,7 +602,7 @@ img {
     max-width: 1200px;
   }
   .home {
-    height: 60vh;
+    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -633,9 +633,29 @@ img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .newsletter__title {
     font-size: 1.5rem;
+  }
+  .newsletter__btn {
+    margin-top: 2rem;
+  }
+  .about {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about__container {
     -ms-grid-columns: (1fr)[2];
